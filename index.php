@@ -103,7 +103,7 @@ if (isset($_SESSION['user'])) {
 
     <div class="buttons">
         <?php if (isset($_SESSION['user'])): ?>
-            <a href="add_post.php">Add New Post</a>
+            <a href="addpost.php">Add New Post</a>
             <a href="logout.php">Logout</a>
         <?php else: ?>
             <a href="login.php">Login</a>

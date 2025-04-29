@@ -40,9 +40,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <title>Add Post - Blog App</title>
-    <style>
+    <!-- <style>
         body {
-            background: #e9ecef; /* Light gray background */
+            background:rgb(8, 9, 9); /* Light gray background */
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* More modern font */
             margin: 0;
             padding: 20px; /* Add some padding around the whole body */
@@ -139,7 +139,105 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             color: #0056b3;
             text-decoration: underline;
         }
-    </style>
+    </style> -->
+    <style>
+    body {
+        background: #f5f5f5; /* Very light gray */
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+    }
+
+    .form-container {
+        background: #ffffff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 500px;
+    }
+
+    h2 {
+        text-align: center;
+        color: #222222;
+        margin-bottom: 20px;
+        font-weight: 600;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        color: #555555;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    input[type="text"],
+    textarea {
+        width: 100%;
+        padding: 10px 12px;
+        margin-bottom: 15px;
+        border: 1px solid #cccccc;
+        border-radius: 5px;
+        background: #fafafa;
+        font-size: 14px;
+        color: #333333;
+        transition: border-color 0.2s;
+    }
+
+    input[type="text"]:focus,
+    textarea:focus {
+        border-color: #333333;
+        outline: none;
+        background: #ffffff;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        background: #222222;
+        color: #ffffff;
+        border: none;
+        padding: 12px;
+        font-size: 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.2s;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #000000;
+    }
+
+    .error {
+        background: #ffe6e6;
+        border-left: 4px solid #cc0000;
+        color: #cc0000;
+        padding: 10px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+
+    .back-link {
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .back-link a {
+        color: #222222;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+    .back-link a:hover {
+        text-decoration: underline;
+    }
+</style>
+
 </head>
 <body>
 

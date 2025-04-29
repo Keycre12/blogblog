@@ -40,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <title>Register - Blog App</title>
-    <style>
+    <!-- <style>
         body {
             background: #e9ecef; /* Light gray background */
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
@@ -164,12 +164,138 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             text-decoration: underline;
             color: #0056b3;
         }
-    </style>
+    </style> -->
+
+    <style>
+    body {
+        background: #f5f5f5; /* Very light gray background */
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .form-container {
+        background: #ffffff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 400px;
+        text-align: center;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+        color: #222222;
+        font-size: 2em;
+        font-weight: 600;
+    }
+
+    form {
+        margin-top: 20px;
+    }
+
+    label {
+        display: block;
+        text-align: left;
+        margin-top: 12px;
+        margin-bottom: 5px;
+        font-weight: 500;
+        color: #555555;
+        font-size: 14px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        width: 100%;
+        padding: 10px 12px;
+        margin-bottom: 15px;
+        border: 1px solid #cccccc;
+        border-radius: 5px;
+        background-color: #fafafa;
+        font-size: 14px;
+        color: #333333;
+        box-sizing: border-box;
+        transition: border-color 0.2s;
+    }
+
+    input[type="text"]:focus,
+    input[type="password"]:focus {
+        border-color: #333333;
+        outline: none;
+        background-color: #ffffff;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        padding: 12px;
+        background-color: #222222;
+        border: none;
+        color: white;
+        font-weight: 500;
+        border-radius: 5px;
+        font-size: 15px;
+        cursor: pointer;
+        transition: background-color 0.2s;
+        margin-top: 15px;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #000000;
+    }
+
+    .message {
+        margin-top: 15px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .error {
+        color: #cc0000;
+    }
+
+    .success {
+        color: #228822;
+    }
+
+    .back-button {
+        display: inline-block;
+        margin-top: 20px;
+        background-color: #555555;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        font-weight: 500;
+        text-decoration: none;
+        transition: background-color 0.2s;
+        font-size: 14px;
+    }
+
+    .back-button:hover {
+        background-color: #333333;
+    }
+
+    .message a {
+        color: #222222;
+        text-decoration: underline;
+        font-weight: 500;
+    }
+
+    .message a:hover {
+        color: #000000;
+    }
+</style>
+
 </head>
 <body>
 
 <div class="form-container">
-    <h2>Register</h2>
+    <h2>REGISTER</h2>
 
     <?php if ($error): ?>
         <div class="message error"><?php echo $error; ?></div>
